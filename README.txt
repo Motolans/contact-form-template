@@ -9,3 +9,5 @@ The form should require a name, phone number, email address, best time to call, 
 The form should be present at the bottom of the web page since it is a one page application.
 
 You'll see a strange file structure occuring here that you aren't use to with regular HTML, CSS, JS static sites. Our site is built with react, which means you'll need to create a component to add to the page. Try to figure it out. Or I can show you next time we're together. Building the component would be a front end job. Adding the functionality would be back end.
+
+We can also do a web meet up if you guys like. To explain some of this stuff. Would be another good exercise to get you guys use to working remotely as a group.
