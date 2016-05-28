@@ -13,6 +13,7 @@ var App = React.createClass({
       React.createElement(What, null),
       React.createElement(Why, null),
       React.createElement(How, null),
+      React.createElement(Contact, null),
       React.createElement(Footer, null)
     );
   }
@@ -87,6 +88,15 @@ var Header = React.createClass({
               )
             )
           ),
+          React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                { href: "#contact" },
+                "Contact Us"
+              )
+            ),
           React.createElement(
             "ul",
             { className: "nav navbar-nav navbar-right" },
@@ -325,6 +335,89 @@ var How = React.createClass({
   }
 });
 
+var Contact = React.createClass({
+  displayName: "Contact",
+
+  render: function render() {
+    return React.createElement(
+      "section",
+      { className: "contact" },
+      React.createElement("a", { name: "contact" }),
+      React.createElement(
+        "div",
+        { className: "container" },
+        React.createElement(
+          "h3",
+          { className: "section-title" },
+          "Contct Us"
+        ),
+        React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "text"}, 
+          { name: "fullName"},
+          { value: "Full Name or Company Name"}
+          )
+        ),
+        React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "text"}, 
+          { name: "phone"},
+          { value: "Phone Number"}
+          )
+        ),
+         React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "text"}, 
+          { name: "email"},
+          { value: "E-mail Address"}
+          )
+        ),
+         React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "text"}, 
+          { name: "callTime"},
+          { value: "Best time for us to call you"}
+          )
+        ),
+         React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "text"}, 
+          { name: "message"},
+          { value: "Write your Message here!"}
+          )
+        ),
+
+
+
+        React.createElement(
+          "p",
+          null,
+          React.createElement(
+          "input",
+          { type: "submit"}, 
+          { className: "btn-primary"},
+          { value: "Send Message!"}
+          { onclick: "MOTO-FUNCTION-NAME-HERE"}
+          )
+      )
+    );
+  }
+});
 var Footer = React.createClass({
   displayName: "Footer",
 
