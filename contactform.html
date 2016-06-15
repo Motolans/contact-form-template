@@ -7,7 +7,7 @@
 
 <body>
 <div id="form-wrap">
-	<form method="post" action="contactform.php">
+	<form>
 		<fieldset>
 			<h4>Contact Us</h4>
 			<label class='labelone' for="name">Full Name: </label>
@@ -23,12 +23,24 @@
 
 		</fieldset>
 		<fieldset>
-			<input class='btn' type='submit' value='Send Email' />
-			<input class='btn' type='reset' value='Reset Form'/>
+			<label for='captcha'>*We just want to make sure you are human (Anti-Spam). What is 2 + 3?></label>
+			<input name='captcha' placeholder='Enter Answer Here'>
+			<input class='btn' type='submit' name='submit' value='Send Email' />
+			<input class='btn' type='reset' name='reset' value='Reset Form'/>
 
 		</fieldset>
 
 	</form>
+	<footer>
+		<div class='container'>
+			<div id="socialmedia">
+				<button><a href='#'>FaceBook</a></button>
+				<button><a href='#'>Twitter</a></button>
+				<button><a href='#'>Google+</a></button>
+			</div>
+		<p>Brought to you by [insert name here].</p>	
+		</div>
+	</footer>
 
 </body>
 </html>
