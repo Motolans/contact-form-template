@@ -11,12 +11,6 @@ function filterForm ($data){
 	return $data;
 }
 
-/*
-*     DEFINE SERVER-SIDE SENDER HEADER $from 
-*
-*
-*/
-$from = "";
 
 
 $fullName = $phone = $email = $callTime = $message = $phoneErr = $fullNameErr = $emailErr = $company = "";
@@ -59,12 +53,12 @@ $sendEmail = true;
 
   	if ($sendEmail){
 
-  		$package = $fullName . "<br>" . $phone .  "<br>" . $company . "<br>" . $message . "<br>";
+  		$package = $fullName . "<br>" . $phone . "<br"> . $email . "<br>" . $company . "<br>" . $message . "<br>";
 
   		/*
   		*UNCOMMENT MAIL LINE BEFORE DEPLOYING
   		*/
-  		//mail ($email, "H&S Query", $package, $from);
+  		//mail ("info@hookandshadow.com", "H&S Query", $package);
 
   		//UNCOMMENT THE NEXT TWO LINES OUT BEFORE DEPLOYING
   		echo $package;
