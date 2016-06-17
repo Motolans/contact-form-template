@@ -11,7 +11,11 @@ function filterForm ($data){
 	return $data;
 }
 
-//DEFINE SERVER-SIDE SENDER HEADER HERE
+/*
+*     DEFINE SERVER-SIDE SENDER HEADER $from 
+*
+*
+*/
 $from = "";
 
 
@@ -57,10 +61,12 @@ $sendEmail = true;
 
   		$package = $fullName . "<br>" . $phone .  "<br>" . $company . "<br>" . $message . "<br>";
 
-  		//UNCOMMENT THIS BEFORE DEPLOYING
+  		/*
+  		*UNCOMMENT MAIL LINE BEFORE DEPLOYING
+  		*/
   		//mail ($email, "H&S Query", $package, $from);
 
-  		//COMMENT THE NEXT TWO LINES OUT BEFORE DEPLOYING
+  		//UNCOMMENT THE NEXT TWO LINES OUT BEFORE DEPLOYING
   		echo $package;
   		echo "Email sent";
   	}
